@@ -30,6 +30,8 @@
     width: 100%;
     position: sticky;
     top: 0px;
+   
+   
 }
 
 .menus {
@@ -38,6 +40,7 @@
     justify-content: space-between;
     position: absolute;
     right: 10px;
+    transition: all 700ms;
 }
 .nav a{
     font-size:large ;
@@ -56,22 +59,46 @@
    color: antiquewhite;
 }
 .nav a:hover{
-    color: aqua;
+    color: greenyellow;
+    scale: 1.2;
 }
 .nav img{
     border-radius:35px;
 }
 .nav1{
-    text-align: center;
-    margin-top: 20px;
+    /* text-align: center; */
+    /* margin-top: 20px; */
 }
 
 
 .container2{
     display: flex;
-    padding: 15px;
-    color: sienna;
+    padding: 5px;
+    color: #3e1807;
+    justify-content: space-around;
+    padding-top: 30px;
+    background-color: lightgreen;
 }
+.nav1{
+    width: 50%;
+    padding-top: 50px;
+    font-size: large;
+}
+.container6{
+    display: flex;
+    padding: 10px;
+    color: #3e1807;
+    justify-content: space-around;
+    padding-top: 30px;
+    background-color: lightsalmon;
+}
+.nav2{
+    width: 50%;
+    padding-top: 50px;
+    font-size: large;
+    
+}
+
 .nav1 button{
     text-align: center;
     margin-top: 20px;
@@ -84,13 +111,14 @@
 }
 
 .innerheading{
-     color: hwb(0 3% 45%);
+     color: rgb(140, 8, 8);
+     text-align: center;
 }
 .container3{
     display: flex;
     justify-content: space-around;
-    
-    
+    background-color: lightgray;
+    padding-top: 30px;
 }
 
 .title{
@@ -106,9 +134,10 @@
 }
 .midder{
     text-align: center;
-    margin: 10px;
-    color: sandybrown;
-    font-size: larger;
+    padding: 20px;
+    color:blanchedalmond;
+    font-size: x-large;
+    background-color: #8d0707;
     
 }
 .title:hover{
@@ -117,11 +146,12 @@
     box-shadow: 4px 4px 8px 4px;
 }
 .container4{
-    margin: 25px;
+   
     padding: 30px;
     display: flex;
     justify-content: center;
-    margin: 20px;
+   
+    background-color: rgb(120, 128, 136);
     
 }
 .box-l{
@@ -225,12 +255,70 @@
 .menus{
   display: flex;
 }
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #8d0707;
+    color: blanchedalmond;
+}
 
 
 @media only screen and (min-width:300px) and (max-width:780px){
     .container2{ 
-        flex-direction: column;
+        flex-direction:column-reverse;
         justify-content: center;
+        align-items: center;
+        padding: 25px;
+    }
+    .nav1{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav1 p{
+        width: 600px;
+        height: 400px;
+        overflow: hidden;
+    }
+    .nav1 button{
+        position: relative;
+        top: 200px;
+
+    }
+    .nav1 h1{
+        position: absolute;
+        top: 300px;
+        left: 100px;
+        font-size:120px;
+        color: lightgoldenrodyellow;
+    }
+    .nav1 img{
+        width: 50%;
+    }
+    .container6{ 
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+    }
+    .nav2{
+        width: 100%;
+        
+    }
+    .nav2 p{
+        width: 600px;
+        height: 400px;
+        overflow: hidden;
+        /* text-align: center; */
+        position: relative;
+        left: 150px;
+        font-size: xx-large;
+    }
+    .nav2 hr{
+        display: none;
+    }
+    .container6 img{
+       display: none;
     }
     .menus{
         width: fit-content;
@@ -246,6 +334,7 @@
     .menubtn{
         display: flex;
         font-size: larger;
+        border:1px solid #3e1807;
     }
     .menus a{
         color:#8d0707;
@@ -253,7 +342,7 @@
         font-size: x-large;
     }
     .container2 img{
-        display: none;
+        /* display: none; */
     }
    
     .container{
@@ -273,6 +362,7 @@
     }
     .nav h1{
         padding-top: 8px;
+       
     }
     .nav li{
        margin-bottom: 20px;
@@ -281,7 +371,7 @@
         font-size: xx-large;
     }
     .midder{
-        color: black;
+        
         font-size: xx-large;
     }
     .container3{
@@ -292,7 +382,12 @@
     .title{
         width:100%;
         font-size: xx-large;
-        overflow: hidden;
+        overflow:scroll;
+        padding: 20px;
+        transition: none;
+    }
+    .title:hover{
+        scale: 0;
     }
     .container4{
         font-size: larger;
@@ -306,14 +401,20 @@
         color: aquamarine;
     }
     .container-5{
-        /* flex-direction: column; */
+        flex-direction: column;
         align-items: center;
         font-size: xx-large;
-        padding: 10px;
+        padding: 20px;
     }
     .container-5 h3{
         color: #8d0707;
         box-shadow: 2px 1px 2px 2px ;
+    }
+    .contact{
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid darkslategrey;
+        border-radius: 10px;
     }
     
 }
