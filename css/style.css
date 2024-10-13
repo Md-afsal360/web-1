@@ -14,7 +14,7 @@
 }
 
 .container{
-   background-color: whitesmoke;
+   background-color: #F9F1F0;
    background-image: url(./images/back-3.jpg);
    background-size: cover;
    
@@ -23,7 +23,7 @@
     padding: 15px;
     display: flex;
     justify-content: space-between;
-    background-color: lightcyan;
+    background-color: #F9F1F0;
     height: 60px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
@@ -32,6 +32,9 @@
     top: 0px;
    
    
+}
+.nav h1{
+    color: #F79489;
 }
 
 .menus {
@@ -45,7 +48,7 @@
 .nav a{
     font-size:large ;
     text-decoration: none;
-    color: darkgreen;
+    color: #f79489;
 
 }
 .nav ul{
@@ -59,7 +62,7 @@
    color: antiquewhite;
 }
 .nav a:hover{
-    color: greenyellow;
+    /* color: greenyellow; */
     scale: 1.2;
 }
 .nav img{
@@ -77,7 +80,7 @@
     color: #3e1807;
     justify-content: space-around;
     padding-top: 30px;
-    background-color: lightgreen;
+    background-color: #FADCD9;
 }
 .nav1{
     width: 50%;
@@ -87,10 +90,10 @@
 .container6{
     display: flex;
     padding: 10px;
-    color: #3e1807;
+    color: #F9F1F0;
     justify-content: space-around;
     padding-top: 30px;
-    background-color: lightsalmon;
+    background-color: #F79489;
 }
 .nav2{
     width: 50%;
@@ -106,18 +109,22 @@
     height: 50px;
     border-radius: 10px;
     border: none;
-    background-color: blueviolet;
-    color:whitesmoke;
+    background-color: #F8AFA6;
+    color: #F9F1F0;
 }
 
 .innerheading{
      color: rgb(140, 8, 8);
      text-align: center;
 }
+.innerheading2{
+    color: #F9F1F0;
+    text-align: center;
+}
 .container3{
     display: flex;
     justify-content: space-around;
-    background-color: lightgray;
+    background-color: #F9F1F0;
     padding-top: 30px;
 }
 
@@ -130,20 +137,25 @@
     background-color: lightgreen;
     border-radius: 10px;
     margin: 15px;
+    color: RED;
     transition: 700ms;
+}
+.title h5{
+    color: black ;
+   
 }
 .midder{
     text-align: center;
     padding: 20px;
-    color:blanchedalmond;
+    color:#F9F1F0;
     font-size: x-large;
-    background-color: #8d0707;
+    background-color: #F8AFA6;
     
 }
 .title:hover{
     scale: 1.5;
     background-color: sandybrown;
-    box-shadow: 4px 4px 8px 4px;
+    box-shadow: 4px 4px 8px 4px #F79489;
 }
 .container4{
    
@@ -151,7 +163,7 @@
     display: flex;
     justify-content: center;
    
-    background-color: rgb(120, 128, 136);
+    background-color: #FADCD9;
     
 }
 .box-l{
@@ -160,7 +172,7 @@
     padding: 20px;
     display: flex;
     width: 400px;
-    background-color: #8d0707;
+    background-color: #F79489;
     color: antiquewhite;
     border-radius: 10px;
     transition: 750ms;
@@ -175,7 +187,7 @@
     padding: 20px;
     display: flex;
     width: 400px;
-    background-color: #8d0707;
+    background-color:  #F79489;
     color: antiquewhite;
     border-radius: 10px;
     transition: 750ms;
@@ -234,9 +246,9 @@
 }
 .midder2{
     text-align: center;
-    color: whitesmoke;
+    color: #F9F1F0;
     font-size: x-large;
-    background-color: #8d0707;
+    background-color:  #F8AFA6;
     padding: 20px;
 }
 .midder2 {
@@ -278,7 +290,7 @@
     .nav1 p{
         width: 600px;
         height: 400px;
-        overflow: hidden;
+        overflow: scroll;
     }
     .nav1 button{
         position: relative;
@@ -290,7 +302,7 @@
         top: 300px;
         left: 100px;
         font-size:120px;
-        color: lightgoldenrodyellow;
+        color: #F79489;
     }
     .nav1 img{
         width: 50%;
@@ -308,7 +320,7 @@
     .nav2 p{
         width: 600px;
         height: 400px;
-        overflow: hidden;
+        overflow: scroll;
         /* text-align: center; */
         position: relative;
         left: 150px;
@@ -331,6 +343,7 @@
         padding: 20px;
         display: none;
     }
+   
     .menubtn{
         display: flex;
         font-size: larger;
@@ -352,12 +365,13 @@
         justify-content: space-between;
     }
     .nav{
-        position: relative;
+        position: sticky;
         justify-content: space-between;
         font-size: x-large;
         align-items: center;
         height: 90px;
         padding-top: 25px;
+        z-index: 1;
        
     }
     .nav h1{
@@ -415,6 +429,12 @@
         padding: 10px;
         border: 2px solid darkslategrey;
         border-radius: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .footer{
+        background-color: #F79489;
+        color: #F9F1F0;
     }
     
 }
